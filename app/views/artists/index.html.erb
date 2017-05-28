@@ -16,6 +16,9 @@
           <div class="col-md-7">
             <h4><%= artist.name %></h4>
           </div>
+          <div class="profile-img">
+            <%=image_tag artist.image_url %>
+          </div>
           <div class="col-md-3 right">
             <%= link_to "View", artist, class: "btn btn-default" %>
             <%= link_to "Update", edit_artist_path(artist), class: "btn btn-default" %>
@@ -26,6 +29,6 @@
       </div>
     </div>
 
-    <%= link_to "Back", artists_path, class: "btn btn-primary" %> <%= link_to "Add new artist", new_artist_path, class: "btn btn-primary" %> 
+    <%= link_to "Back", artists_path, class: "btn btn-primary" %> <%= link_to "Add new artist", new_artist_path, class: "btn btn-primary" %>
   </div>
 </div>

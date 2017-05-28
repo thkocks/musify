@@ -1,2 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+img, .panel-heading{
+  max-height: 200px;
+  max-width: 200px;
+}

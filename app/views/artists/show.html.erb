@@ -6,8 +6,9 @@
     <p>Artist: <%= @artist.name %></p>
     <p>Genre(s): <%= @artist.genre %></p>
     <p>Bio: <%= @artist.bio %></p>
-    <%=image_tag @artist.image_url %>
-
+    <div class="profile-img">
+      <%=image_tag @artist.image_url %>
+    </div>
   </div>
 
 </div>

@@ -1,7 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-img, .panel-heading{
+.profile-img-large img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.profile-img-small img {
   max-height: 200px;
   max-width: 200px;
+}
+
+.song-img img {
+  max-height: 100px;
+  max-width: 100px;
 }

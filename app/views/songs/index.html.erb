@@ -14,7 +14,10 @@
         <% @songs.each do |song| %>
         <div class="row">
           <div class="col-md-7">
-            <h4><%= song.name %></h4>
+            <h4><%= song.title %></h4>
+              <div class="song-img">
+                <%=image_tag song.image_url %>
+              </div>
           </div>
           <div class="col-md-3 right">
             <%= link_to "View", song, class: "btn btn-default" %>

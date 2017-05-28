@@ -1,6 +1,6 @@
 <%= form_for @song do |f| %>
   <div class="form-group">
-    <label>title</label>
+    <label>Title</label>
     <%= f.text_field :title, placeholder: "Title", class: "form-control" %>
   </div>
 
@@ -14,10 +14,10 @@
     <%= f.text_field :genre, placeholder: "Genre", class: "form-control" %>
   </div>
 
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label>Song length</label>
-    <%= f.number_field :song_length, placeholder: "Song length", class: "form-control" %>
-  </div>
+    <%= f.number_field :song_length, placeholder: "(mm.ss)", class: "form-control" %>
+  </div> -->
 
   <div class="form-group">
     <label>Add cover image url</label>

@@ -1,0 +1,23 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @artist.name %></div>
+
+  <div class="panel-body">
+
+    <p>Artist: <%= @song.artist.name %></p>
+    <p>Album: <%= @song.album %></p>
+    <p>Genre: <%= @song.genre %></p>
+    <p>Length: <%= @song.song_length %></p>
+    <%=image_tag @song.image_url %>
+
+  </div>
+
+</div>
+
+<%= link_to "Back", artists_path, class: "btn btn-default" %> <%= link_to "Edit", edit_artist_path, class: "btn btn-default" %>
+
+
+t.string :title
+t.string :album
+t.string :genre
+t.decimal :song_length
+t.string :image_url

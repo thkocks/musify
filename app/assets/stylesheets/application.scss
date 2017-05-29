@@ -1,6 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// font-family: 'Montserrat Subrayada', sans-serif;
+// font-family: 'Luckiest Guy', cursive;
+// font-family: 'Share Tech Mono', monospace;
+// font-family: 'News Cycle', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+
+h1, h2, h3, h4,h5,h6 {
+  font-family: 'Luckiest Guy', cursive;
+  // background-color: yellow;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+}
+
 .profile-img-large img {
   max-height: 400px;
   max-width: 400px;
@@ -93,6 +109,7 @@ body::after {
   display: block;
   max-width: 1000px;
   margin: auto;
+  opacity: 0.95;
 }
 
 .home {

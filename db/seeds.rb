@@ -20,7 +20,7 @@ skrillex = Artist.create!(name: "Skrillex",
 
 blur = Artist.create!(name: "Blur",
                 genre: "Rock",
-                bio: "Blur are an English rock band, formed in London in 1988. The group consists of singer/keyboardist Damon Albarn, guitarist/singer Graham Coxon, bassist Alex James and drummer Dave Rowntree. Their debut album Leisure (1991) incorporated the sounds of Madchester and shoegazing. Following a stylistic change influenced by English guitar pop groups such as the Kinks, the Beatles and XTC, Blur released Modern Life Is Rubbish (1993), Parklife (1994) and The Great Escape (1995). In the process, the band became central to the Britpop music and culture movement, and achieved mass popularity in the UK.",
+                bio: "Blur are an English rock band, formed in London in 1988. The group consists of singer/keyboardist Damon Albarn, guitarist/singer Graham Coxon, bassist Alex James and drummer Dave Rowntree.",
                 image_url: "http://res.cloudinary.com/thkocks/image/upload/v1496028254/Blur__band_tdha4x.png"
 )
 
@@ -32,7 +32,7 @@ gangstarr = Artist.create!(name: "Gang Starr",
 
 atribecalledquest = Artist.create!(name: "A Tribe Called Quest",
                 genre: "Hiphop",
-                bio: "A Tribe Called Quest is an American hip-hop group formed in 1985[2] and originally composed of MC and producer Q-Tip, MC Phife Dawg and DJ and producer Ali Shaheed Muhammad. A fourth member, MC Jarobi White, left the group in 1991 after the release of their debut album. He continued to contribute to the band sporadically before rejoining for their 2006 reunion. Along with De La Soul, the group was a central part of the Native Tongues, and enjoyed the most commercial success out of all the groups to emerge from that collective. The group released six albums between 1990 and 2016. The band broke up in 1998 after releasing their fifth album. In 2006, the group reunited and toured the United States. In 2016, they released their sixth album, which was still incomplete when Phife Dawg died suddenly in March 2016, and was completed by the other members after his death.",
+                bio: "A Tribe Called Quest is an American hip-hop group formed in 1985[2] and originally composed of MC and producer Q-Tip, MC Phife Dawg and DJ and producer Ali Shaheed Muhammad. A fourth member, MC Jarobi White, left the group in 1991 after the release of their debut album.",
                 image_url: "http://res.cloudinary.com/thkocks/image/upload/v1496028256/32_1_wide-25b7986ab71a904c24acc2cf368315016c8e3137_ka3dte.jpg"
 )
 
@@ -92,8 +92,94 @@ Song.create!(title: "Kyoto",
                 artist: skrillex
 )
 
+Song.create!(title: "Flip The Script",
+                album:"Daily Operation",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/4/4e/Gang_Starr_Daily_Operation.jpg",
+                artist: gangstarr
+)
+
+Song.create!(title: "Code of the Streets",
+                album:"Hard to Earn",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/f/f9/Hardtoearn.jpg",
+                artist: gangstarr
+)
+
+Song.create!(title: "Sabotage",
+                album:"The Ownerz",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/e/e9/The_Ownerz.jpg",
+                artist: gangstarr
+)
+
+Song.create!(title: "Sing",
+                album:"Leisure",
+                genre: "Rock",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/2/22/LeisureUK.jpg",
+                artist: blur
+)
+
+
+Song.create!(title: "Chemical World",
+                album:"Modern Life Is Rubbish",
+                genre: "Rock",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/1/15/Blur_-_Modern_Life_is_Rubbish.jpg",
+                artist: blur
+)
+
+Song.create!(title: "Battery in Your Leg",
+                album:"Think Tank",
+                genre: "Rock",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/d/d1/Think_tank_album_cover.jpg",
+                artist: blur
+)
+
+Song.create!(title: "Take Ü There",
+                album:"Skrillex and Diplo Present Jack Ü",
+                genre: "Dubstep",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/e/e0/Skrillex_and_Diplo_Present_Jack_%C3%9C.png",
+                artist: skrillex
+)
+
+Song.create!(title: "Jungle Bae",
+                album:"Skrillex and Diplo Present Jack Ü",
+                genre: "Dubstep",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/e/e0/Skrillex_and_Diplo_Present_Jack_%C3%9C.png",
+                artist: skrillex
+)
+
+Song.create!(title: "Febreze",
+                album:"Skrillex and Diplo Present Jack Ü",
+                genre: "Dubstep",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/e/e0/Skrillex_and_Diplo_Present_Jack_%C3%9C.png",
+                artist: skrillex
+)
+
+Song.create!(title: "Can I Kick It?",
+                album:"People's Instinctive Travels and the Paths of Rhythm",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/f/f3/ATCQPeople%27sInstinctTravels.jpg",
+                artist: atribecalledquest
+)
+
+Song.create!(title: "Buggin' Out",
+                album:"The Low End Theory",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/4/42/ATribeCalledQuestTheLowEndtheory.jpg",
+                artist: atribecalledquest
+)
+
+Song.create!(title: "Dis Generation",
+                album:"We Got It from Here... Thank You 4 Your Service",
+                genre: "Hiphop",
+                image_url: "https://upload.wikimedia.org/wikipedia/en/e/e6/We_Got_It_From_Here%2C_Thank_You_For_Your_Service.png",
+                artist: atribecalledquest
+)
+
 # Song.create!(title: "",
 #                 album:"",
 #                 genre: "",
-#                 image_url: ""
+#                 image_url: "",
+#                 artist:
 # )

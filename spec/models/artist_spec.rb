@@ -14,14 +14,21 @@ RSpec.describe Artist, type: :model do
       expect(artist.errors).to have_key(:bio)
     end
 
-    describe ".order_by_name" do
-      let!(:artist1) { create :artist, name: "Zorro" }
-      let!(:artist2) { create :artist, name: "Ariana" }
-      let!(:artist3) { create :artist, name: "Opera" }
+    describe "association with song" do
+      let(:artist) { create :artist }
+      let!(:song) { create :song, artist: artist }
 
-      it "returns a sorted array of artists by name" do
-        expect(Artist.order_by_name).to eq([artist2, artist3, artist1])
+      it "has many songs" do
+        song1 = artist.songs.new(title: "Lovesong")
+        song2 = artist.songs.new(title: "Blues")
+
+        expect(artist.songs).to include(song1)
+        expect(artist.songs).to include(song2)
       end
+
+      # it "deletes associated songs" do
+      #   expect { artist.destroy }.to change(Song, :count).by(-1)
+      # end
     end
   end
 end

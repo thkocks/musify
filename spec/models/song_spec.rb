@@ -34,4 +34,14 @@ RSpec.describe Song, type: :model do
       expect(Song.order_by_title).to eq([song1, song3, song2])
     end
   end
+
+  describe "association with artist" do
+    let(:artist) { create :artist, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/PM5544_with_non-PAL_signals.png/320px-PM5544_with_non-PAL_signals.png"}
+
+    it "belongs to an artist" do
+      song = artist.songs.new(title: "blablabla")
+
+      expect(song.artist).to eq(artist)
+   end
+ end
 end

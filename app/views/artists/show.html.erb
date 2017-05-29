@@ -1,6 +1,7 @@
 <ul class="sidebar-list">
   <li><%= link_to "Back", artists_path, class: "btn btn-primary" %>
     <%= link_to "Edit", edit_artist_path, class: "btn btn-primary" %>
+    <%= link_to "Delete", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-primary" %>
     <%= link_to "Add song", new_song_path, class: "btn btn-primary" %>
   </li>
 </ul>
@@ -16,7 +17,5 @@
     <p>Bio: <%= @artist.bio %></p>
     <div class="profile-img-large">
       <%=image_tag @artist.image_url %>
-    </div>
-  </div>
 
 </div>

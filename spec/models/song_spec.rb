@@ -1,5 +1,37 @@
 require 'rails_helper'
 
+# RSpec.describe Song, type: :model do
+#   describe "validations" do
+#     it "is invalid without a title" do
+#       artist = Song.new(title: "")
+#       artist.valid?
+#       expect(artist.errors).to have_key(:title)
+#     end
+#
+#     it "is invalid without an album" do
+#       artist = Song.new(album: "")
+#       artist.valid?
+#       expect(artist.errors).to have_key(:album)
+#     end
+#   end
+# end
+
+# RSpec.describe Song, type: :model do
+#   describe "validations" do
+# it { is_expected.to validate_presence_of(:title) }
+# it { is_expected.to validate_presence_of(:bio) }
+#   end
+# end
+
 RSpec.describe Song, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  describe ".order_by_title" do
+    let!(:song1) { create :song, title: "aaaiaiai" }
+    let!(:song2) { create :song, title: "nonono" }
+    let!(:song3) { create :song, title: "betterrer" }
+
+    it "returns a sorted array of songs by name" do
+      expect(Song.order_by_title).to eq([song1, song3, song2])
+    end
+  end
 end
